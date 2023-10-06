@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>История нейросетей</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <script type="text/javascript">
+    function navigate()
+    {
+      alert("Браузер: "+navigator.appName+"<br> Версия: "+navigator.appVersion);
+    }
+    function locate()
+    {
+      alert(location.href);  
+    }
+    function screenset()
+    {
+      window.alert("Глубина цвета: "+ screen.colorDepth+" Ширина "+ screen.width+" Высота "+ screen.height);
+    }
+    function windowset()
+    {
+      window.alert("Window");
+    }
+    document.write(document.lastModified);
+    function changeplus ()
+    {
+      this.style.textIndent = '50px';
+    }
+    function changeminus ()
+    {
+      this.style.textIndent = '0';
+    }
+   </script>
+    
+</head>
+<body>
+  <header>
+      <div>
+        <h1 class="header_title">Нейронная сеть</h1>
+      </div>
+      <div class="text">
+        <p onMouseOut="this.style.color='black';"; onMouseOver="this.style.color='grey';";> НС представляет собой систему соединённых и взаимодействующих между собой простых процессоров (искусственных нейронов). Такие процессоры обычно довольно просты (особенно в сравнении с процессорами, используемыми в персональных компьютерах). Каждый процессор подобной сети имеет дело только с сигналами, которые он периодически получает, и сигналами, которые он периодически посылает другим процессорам. И, тем не менее, будучи соединёнными в достаточно большую сеть с управляемым взаимодействием, такие по отдельности простые процессоры вместе способны выполнять довольно сложные задачи.    
+        </p>
+        <p  onMouseOver = "this.style.textIndent='50px';"onMouseOut= "this.style.textIndent = '0';"> Нейронные сети не    программируются в привычном смысле этого слова, они обучаются[a]. Возможность обучения — одно из главных преимуществ нейронных сетей перед традиционными алгоритмами. Технически обучение заключается в нахождении коэффициентов связей между нейронами. В процессе обучения нейронная сеть способна выявлять сложные зависимости между входными данными и выходными, а также выполнять обобщение. 
+        </p>
+        <p  onMouseOver = "this.style.marginLeft='150px';"onMouseOut= "this.style.marginLeft = '0';"> С точки зрения машинного обучения, нейронная сеть представляет собой частный случай методов распознавания образов, дискриминантного анализа;
+          С точки зрения математики, обучение нейронных сетей — это многопараметрическая задача нелинейной оптимизации;
+          С точки зрения кибернетики, нейронная сеть используется в задачах адаптивного управления и как алгоритмы для робототехники;
+          С точки зрения развития вычислительной техники и программирования, нейронная сеть — способ решения проблемы эффективного параллелизма[3];
+          С точки зрения искусственного интеллекта, ИНС является основой философского течения коннекционизма и основным направлением в структурном подходе по изучению возможности построения (моделирования) естественного интеллекта с помощью компьютерных алгоритмов.        
+        </p>
+      </div>
+  </header>
+    <main>
+      <div class="chrono-text">
+        <h2>Хронология развития нейронных сетей</h2>
+        <p class="news">1940-1960: Появление концепции нейросети</p>
+        <p class="news">1980-2000: Метод обратного распространения ошибки и нелинейные функции активации</p>
+        <p class="news">2000-2020: Развитие Deep Learning и современные нейросети</p>
+      </div>
+      <div class="button-class">
+        <input type="button" value="Window" OnClick = "windowset();" class="button1">
+        <input type="button" value="Novigator" OnClick = "navigate();" class="button1">
+        <input type="button" value="Location" OnClick = "locate();" class="button1">
+        <input type="button" value="Screen" OnClick = "screenset();" class="button1">
+      </div>
+      <div class="button-class2">
+        <input type="button" value="Photo 1" class="button1" onClick="p2.style.visibility='hidden'">
+        <input type="button" value="Photo 2" class="button1" onClick="p2.style.visibility='visible'">
+        <input type="button" value="Photo 3" class="button1" onClick="p2.style.zIndex ='100'">   
+      </div>
+      <div class="photos">
+        <img src="./img/photo1.jpeg" alt="" class="image1" name = 'p1'>
+        <img src="./img/photo3.jpeg" alt="" class="image2" name = 'p2'>
+        <img src="./img/photo2.jpeg" alt="" class="image3" name = 'p3'>
+      </div>
+
+    </main>
+</body>
+</html>
